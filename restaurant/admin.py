@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Booking, Menu
 
-# Register your models here.
+my_models = [Booking, Menu]
+admin.site.register(my_models)
